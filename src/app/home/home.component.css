@@ -1,0 +1,52 @@
+.title-block {
+    animation: animation-text-home 3s ease;
+}
+
+.text {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.title-block h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.title-block h1 span {
+    color: #c70039;
+}
+
+.text p {
+    font-size: 1.4rem;
+    margin-left: 70px;
+}
+
+.title-block .text p span:nth-child(1) {
+    color: #c70039;
+}
+
+.title-block .text p span:nth-child(2) {
+    color: wheat;
+    animation: text 800ms infinite ease-in-out;
+    z-index: -1;
+}
+
+@keyframes animation-text-home {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes text {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

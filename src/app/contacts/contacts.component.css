@@ -1,0 +1,82 @@
+.title-block {
+    text-align: center;
+}
+
+.title-block h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.title-block h1 span {
+    color: #c70039;
+}
+
+.title-block p {
+    font-size: 1.4rem;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content form div {
+    text-align: center;
+}
+
+.content .input-form {
+    margin: 10px auto 10px;
+    width: 40%;
+    max-width: 300px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+
+.content .input-form:focus {
+    outline: none;
+}
+
+
+/* .btn {
+    background-color: #c70039;
+    border: 1px solid red;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+ */
+
+.cont {
+    margin: 0 auto;
+    width: 100px;
+}
+
+.cont p {
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+}
+
+.cont p:nth-child(1) {
+    color: green;
+}
+
+.cont p:nth-child(2) {
+    color: red;
+}
+
+input.ng-touched.ng-invalid {
+    border: solid red 3px;
+}
+
+input.ng-touched.ng-valid {
+    border: solid green 3px;
+}
+
+.alert {
+    width: fit-content;
+    margin: 0 auto;
+}

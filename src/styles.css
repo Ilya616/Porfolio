@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    user-select: none;
+    height: auto;
+    overflow-x: hidden;
+    width: 100%;
+    background: #171717;
+    min-height: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fon_animation {
+    background-color: #c70039;
+    position: absolute;
+    z-index: 11;
+    width: 108%;
+    height: 100%;
+    transform: translateX(-150%) skewX(-10deg);
+    animation: show-fon-block 2s ease;
+    top: 0;
+}
+
+@keyframes show-fon-block {
+    from {
+        transform: translateX(-120%) skewX(-10deg);
+    }
+    to {
+        transform: translateX(100%) skewX(-10deg);
+    }
+}

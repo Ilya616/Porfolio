@@ -1,0 +1,33 @@
+<div class="fon_animation"></div>
+<div class="title-block">
+    <h1>Contact <span>Me</span></h1>
+</div>
+
+<div class="content">
+    <form #form="ngForm" (ngSubmit)="getForm(form)" novalidate>
+        <div>
+            <input type="text" name="name" ngModel required class="input-form" placeholder="Имя" #name="ngModel">
+        </div>
+        <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+            Не указано имя
+        </div>
+        <div>
+            <input type="email" name="email" ngModel required email class="input-form" #email="ngModel" placeholder="e-mail">
+        </div>
+        <div [hidden]="email.valid || email.untouched" class="alert alert-danger">
+            Некорректный email
+        </div>
+        <div>
+            <textarea name="msg" id="" cols="30" ngModel rows="10" required class="input-form" placeholder="Сообщение..." #msg="ngModel"></textarea>
+        </div>
+        <div [hidden]="msg.valid || msg.untouched" class="alert alert-danger">
+            Сообщение не может быть пустым
+        </div>
+        <div><button [disabled]="form.invalid" class="btn btn-danger">Отправить</button></div>
+
+    </form>
+</div>
+
+<div class='cont' *ngIf="getFormFlag">
+    <p *ngIf="formFlag">Сообщение отправлено</p>
+</div>

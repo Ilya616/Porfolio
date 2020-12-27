@@ -1,0 +1,25 @@
+<div class="fon_animation"></div>
+
+<div class="title-block">
+    <h1>About <span>Me</span></h1>
+</div>
+
+<div class="content">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia illum quos vitae facilis ad, rem ut aperiam libero consequuntur corporis, illo accusantium. Ad earum accusamus at voluptates nemo cum, atque!</p>
+
+    <h3>My Skills</h3>
+
+    <div *ngIf="!loader" class="loader">
+        <img src="assets/spinner.gif" alt="">
+    </div>
+
+    <div class="skills">
+        <div class="skill-wrap" *ngFor="let skill of skills">
+            <p>{{ skill.name }}</p>
+            <div class="skill-block">
+                <div class="skill-progress" style="width: {{ skill.value }} %">{{ skill.value }}%</div>
+            </div>
+        </div>
+    </div>
+
+</div>

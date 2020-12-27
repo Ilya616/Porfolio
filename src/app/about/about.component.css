@@ -1,0 +1,48 @@
+.title-block{
+	text-align: center;
+}
+.title-block h1{
+	font-size: 3.5rem;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.title-block h1 span{
+	color: #c70039;
+}
+.title-block p{
+	font-size:1.4rem;
+}
+.content{
+	width: 90%;
+	margin: 0 auto;
+}
+.skills{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.skill-wrap{
+	width: 48%;
+
+}
+.skill-block{
+	background-color: #191919;
+	width: 100%;
+	border-radius: 4px;
+	padding: 4px;
+}
+.skill-progress{
+	background-color: #c70039;
+	text-align: center;
+	border-radius: 4px;
+	padding: 4px;
+}
+.loader{
+	margin-top: 50px;
+	text-align: center;
+}
+.loader img{
+	width: 50px;
+	height: 50px;
+	
+}
